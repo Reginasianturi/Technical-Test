@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "1258e14c-267d-41e5-a7df-788e3621f3bf",
+		"name": "WarPin_mockAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "200-API OK",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"prefix\":\"PT\",\r\n   \"name\":\"Sejahtera\",\r\n   \"suffix\":\"Tbk\",\r\n   \"industry_id\":\"1\",\r\n   \"employee_size\":\"500\",\r\n   \"street\":\"Jl.Sudirman kav. 21\",\r\n   \"place\":\"Sudirman Tower\",\r\n   \"geograph_id\":100,\r\n   \"phone\":\"08561290092\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://run.mocky.io/v3/52a9ae8f-8427-4911-9281-3c63a5f6bfac",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"52a9ae8f-8427-4911-9281-3c63a5f6bfac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "400 - Bad Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"prefix\":\"PT\",\r\n   \"name\":\"\",\r\n   \"suffix\":\"Tbk\",\r\n   \"industry_id\":\"1\",\r\n   \"employee_size\":\"500\",\r\n   \"street\":\"Jl.Sudirman kav. 21\",\r\n   \"place\":\"Sudirman Tower\",\r\n   \"geograph_id\":100,\r\n   \"phone\":\"08561290092\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://run.mocky.io/v3/c4096ed6-1564-466d-b749-d83fbfa9ca17",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"c4096ed6-1564-466d-b749-d83fbfa9ca17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "404 - Not Found",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"prefix\":\"PT\",\r\n   \"name\":\"Sejahtera\",\r\n   \"suffix\":\"Tbk\",\r\n   \"industry_id\":\"1\",\r\n   \"employee_size\":\"500\",\r\n   \"street\":\"Jl.Sudirman kav. 21\",\r\n   \"place\":\"Sudirman Tower\",\r\n   \"geograph_id\":100,\r\n   \"phone\":\"08561290092\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://run.mocky.io/v3/cf38a60a-3545-477a-b92e-619071e07d47",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"cf38a60a-3545-477a-b92e-619071e07d47"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "500 - Internal Server Error",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"prefix\":\"PT\",\r\n   \"name\":\"Sejahtera\",\r\n   \"suffix\":\"Tbk\",\r\n   \"industry_id\":\"1\",\r\n   \"employee_size\":\"500\",\r\n   \"street\":\"Jl.Sudirman kav. 21\",\r\n   \"place\":\"Sudirman Tower\",\r\n   \"geograph_id\":100,\r\n   \"phone\":\"08561290092\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://run.mocky.io/v3/d06dd1df-0878-40aa-b2cc-12a1cc7b64f2",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"d06dd1df-0878-40aa-b2cc-12a1cc7b64f2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
